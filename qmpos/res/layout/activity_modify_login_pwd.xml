@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/modify_login_pwd_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="登录密码更改" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_phone_recharge_select"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5.0dip"
+        android:orientation="vertical"
+        android:padding="20.0dip"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/hk_bg_list_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="当前密码" />
+
+            <View
+                style="@style/textview_line_edit"
+                android:layout_height="18dp"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="13.0dip" />
+
+            <EditText
+                android:id="@+id/modify_login_pwd_now_pwd"
+                style="@style/et_input_textview"
+                android:layout_marginLeft="10.0dip"
+                android:numeric="integer"
+                android:password="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/hk_bg_list_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="登录密码" />
+
+            <View
+                style="@style/textview_line_edit"
+                android:layout_height="18dp"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="13.0dip" />
+
+            <EditText
+                android:id="@+id/modify_login_pwd_new_pwd"
+                style="@style/et_input_textview"
+                android:layout_marginLeft="10.0dip"
+                android:numeric="integer"
+                android:password="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/hk_bg_list_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="确认密码" />
+
+            <View
+                style="@style/textview_line_edit"
+                android:layout_height="18dp"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="13.0dip" />
+
+            <EditText
+                android:id="@+id/modify_login_pwd_again_pwd"
+                style="@style/et_input_textview"
+                android:layout_marginLeft="10.0dip"
+                android:numeric="integer"
+                android:password="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_margin="5.0dip"
+            android:gravity="center_vertical"
+            android:text="密码由6位的数字组成"
+            android:textColor="@color/gray"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/modify_login_pwd_btn_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/all_page_bg"
+                android:enabled="true"
+                android:text="确认更改"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

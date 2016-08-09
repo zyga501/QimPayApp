@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bank_name">
+        <item>中国工商银行</item>
+        <item>中国农业银行</item>
+        <item>中国建设银行</item>
+        <item>中国交通银行</item>
+        <item>招商银行</item>
+        <item>中信银行</item>
+        <item>光大银行</item>
+        <item>北京银行</item>
+    </string-array>
+    <string-array name="bank_code">
+        <item>icbc</item>
+        <item>abc</item>
+        <item>ccb</item>
+        <item>bankcomm</item>
+        <item>cmb</item>
+        <item>ecitic</item>
+        <item>cebbank</item>
+        <item>bankofbj</item>
+    </string-array>
+</resources>

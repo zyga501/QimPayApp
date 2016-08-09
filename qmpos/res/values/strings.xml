@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_version">100000</string>
+    <string name="app_name">珍妮钱包</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_user_name">手机号</string>
+    <string name="login_user_pwd">登录密码</string>
+    <string name="login_btn_login_name">登录</string>
+    <string name="login_remember_user">记住手机号</string>
+    <string name="login_find_pwd">忘记密码</string>
+	<string name="login_reg">注册</string>
+	<string name="reg1_mobile">手机号码</string>
+	<string name="reg1_smsCode">验证码</string>
+	<string name="reg1_getSmsCode">获取验证码</string>
+	<string name="reg1_agree1">同意</string>
+	<string name="reg1_agree2">服务协议</string>
+	<string name="reg1_next_step">下一步</string>
+	<string name="reg2_real_name">请输入真实姓名</string>
+	<string name="reg2_cert_no">请输入身份证号码</string>
+	<string name="reg2_login_pwd">登录密码</string>
+	<string name="reg2_login_pwd_again">确认登录密码</string>
+	<string name="reg2_trans_pwd">交易密码</string>
+	<string name="reg2_trans_pwd_again">确认交易密码</string>
+	<string name="reg2_chnl_id">请输入推荐人的手机号</string>
+	<string name="reg2_btn_confirm">注册</string>
+	<string name="main_t2_myAccount">我的账户</string>
+	<string name="main_t2_myAccountMsg">登录查看账户信息</string>
+	<string name="main_t2_myAssets">我的资产</string>
+	
+	<string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+	
+</resources>

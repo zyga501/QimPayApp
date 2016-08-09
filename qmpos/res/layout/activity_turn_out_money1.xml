@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F3F3F3"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="转账" />
+
+        <Button
+            android:id="@+id/btn_transfer_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/page_margin15"
+            android:background="@null"
+            android:text="转账记录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_phone_recharge_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/page_margin15"
+        android:layout_marginRight="@dimen/page_margin15"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/bg_rect_corner" >
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="收款人手机号"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/tv_phone"
+                android:background="#ffe2e2e2" />
+
+            <Button
+                android:id="@+id/get_mail_list"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tongxunlu" />
+
+            <EditText
+                android:id="@+id/edit_turnout_money_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/get_mail_list"
+                android:layout_toRightOf="@+id/tv_phone"
+                android:background="@null"
+                android:hint="请输入收款人手机号"
+                android:numeric="integer"
+                android:phoneNumber="true"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提醒："
+                android:textColor="@color/text_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="您正在短信转账，"
+                android:textColor="@color/text_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="为确保你的正常转账，"
+                android:textColor="@color/text_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="请准确填写对方手机号码！"
+                android:textColor="@color/text_black" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next_turn_out_money_mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dip"
+            android:background="@color/all_page_bg"
+            android:enabled="true"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

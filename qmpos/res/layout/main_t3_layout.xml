@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <TextView
+            style="@style/textview_title"
+            android:text="分享好友" />
+        <TextView
+            android:id="@+id/tv_fenxiangjilu"
+            style="@style/textview_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="分享记录"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_t2_myNextMerInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20.0dip" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/numRemain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享名额剩余："
+                android:textColor="#ff36363e" />
+
+            <TextView
+                android:id="@+id/main_t2_myNextMerNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/numRemain"
+                android:text=""
+                android:textColor="#ffff8800" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/numRemain"
+                android:layout_marginTop="20.0dip"
+                android:text="分享一位好友，将增加100积分"
+                android:textColor="#ffc0c0c0" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_t2_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_t2_myNextMerInfo"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="5.0dip" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_t2_tjsm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_t2_line1"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/numShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/main_t2_tjsm1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享须知"
+                android:textColor="#ff36363e" />
+
+            <TextView
+                android:id="@+id/main_t2_tjsm2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_t2_tjsm1"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="1、分享名额没有限制，无限推广"
+                android:textColor="#ffc0c0c0" />
+
+            <TextView
+                android:id="@+id/main_t2_tjsm3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_t2_tjsm2"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="2、分享朋友需成功注册才能获得100积分回馈"
+                android:textColor="#ffc0c0c0" />
+
+            <TextView
+                android:id="@+id/main_t2_tjsm4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_t2_tjsm3"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="3、获得的积分可以兑换礼品"
+                android:textColor="#ffc0c0c0" />
+
+            <TextView
+                android:id="@+id/main_t2_tjsm5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_t2_tjsm4"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="4、分享商户产生交易，您将实时获得返佣"
+                android:textColor="#ffc0c0c0" />
+
+            <TextView
+                android:id="@+id/main_t2_tjsm6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_t2_tjsm5"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="微信 短信 二维码 QQ"
+                android:textColor="#ffc0c0c0"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_t2_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="10.0dip" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/main_t2_tuiguang"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip" >
+
+        <TableRow
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:id="@+id/main_t2_share_1"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/lh_weixin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_t2_share_1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5.0dip"
+                    android:text="微信"
+                    android:textColor="#ff595757"
+                    android:textSize="13.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:id="@+id/main_t2_share_2"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/lh_duanxin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_t2_share_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5.0dip"
+                    android:text="短信"
+                    android:textColor="#ff595757"
+                    android:textSize="13.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:id="@+id/main_t2_share_3"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/lh_erweima" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_t2_share_3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5.0dip"
+                    android:text="二维码"
+                    android:textColor="#ff595757"
+                    android:textSize="13.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:id="@+id/main_t2_share_4"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/lh_qq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_t2_share_4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5.0dip"
+                    android:text="QQ"
+                    android:textColor="#ff595757"
+                    android:textSize="13.0dip" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_t2_line3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="20.0dip" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+    </RelativeLayout>
+
+</LinearLayout>

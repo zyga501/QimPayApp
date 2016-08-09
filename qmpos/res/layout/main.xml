@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/nor_recv1_btn_back"
+            android:layout_width="45.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.0dip"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="收款记录" />
+    </RelativeLayout>
+
+    <cn.qmpos.view.XListView
+        android:id="@+id/xListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000" />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#ffff0000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whilte">#FFFFFF</color>
+    <color name="bg_color">#EDEDED</color>
+    <color name="black_text">#000000</color>
+    <color name="green">#ff63bc46</color>
+    <color name="orange">#ffee7600</color>
+    <color name="blue">#ff4f94cd</color>
+    <color name="black">#ff000000</color>
+    <color name="text_color">#606060</color>
+    <color name="gray">#ff808a87</color>
+    <color name="page_bg">#fff0f0f0</color>
+    <color name="bg_orange">#ffffa100</color>
+    <color name="text_red">#ffcf3b3d</color>
+    <color name="text_black">#ff5b5b5b</color>
+    <color name="mainBg">#ff393a4c</color>
+    <color name="loginBtnBg">#ffffffff</color>
+    <color name="under_line">#D1D0CF</color>
+    <color name="page_backgroud">#ff424558</color>
+    <color name="all_page_bg">#003577</color>
+    <color name="page_bg_yue_fanyong">#40618C</color>
+    <color name="under_line_color">#D8D8D8</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="text_gray">#F0F0F0</color>
+    <color name="deep_bule">#263C65</color>
+    <color name="button_color">#e62231</color>
+    <color name="rate_color">#14d419</color>
+    <color name="title_text">#3e3e3e</color>
+
+</resources>

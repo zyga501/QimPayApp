@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DDDDDD"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/nor_recv1_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="充值" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/ll_phone_recharge_select"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_width_height"
+                android:layout_marginRight="@dimen/margin_width_height"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@drawable/bg_rect_corner"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10.0dip"
+                        android:gravity="center"
+                        android:text="充值金额" />
+
+                    <View
+                        style="@style/textview_line_edit"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="2.0dip" />
+
+                    <EditText
+                        android:id="@+id/nor_recv1_trans_amt"
+                        style="@style/et_input_textview"
+                        android:layout_marginLeft="10.0dip"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:layout_marginTop="@dimen/page_margin"
+                        android:text="充值说明"
+                        android:textColor="@color/black_text"
+                        android:textSize="18.0sp" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/bg_rect_corners" >
+
+                        <EditText
+                            android:id="@+id/nor_recv1_ord_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="@dimen/page_width_height"
+                            android:background="@null"
+                            android:ems="10"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center_vertical"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/black_text"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_margin"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:text="充值选择"
+                        android:textColor="@color/black_text"
+                        android:textSize="18.0sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/downchoose_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:background="@drawable/bg_rect_corners"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_paychannel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/page_margin15"
+                            android:gravity="center"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size16" />
+
+                        <TextView
+                            android:id="@+id/tv_D0_T1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="@dimen/page_margin15"
+                            android:gravity="center"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size16" />
+
+                        <TextView
+                            android:id="@+id/nor_recv1_fee_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/img_feilv_down"
+                            android:gravity="center"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size16" />
+
+                        <ImageView
+                            android:id="@+id/img_feilv_down"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/page_margin15"
+                            android:src="@drawable/sk_down" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_margin"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:text="充值方式"
+                        android:textColor="@color/black_text"
+                        android:textSize="18.0sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/putong_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@drawable/bg_rect_corners" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/all_page_bg"
+                            android:gravity="center" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:background="@null"
+                            android:src="@drawable/putongsk" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/page_width_height"
+                            android:gravity="center"
+                            android:text="普通充值"
+                            android:textColor="@color/black_text" />
+
+                        <ImageView
+                            android:id="@+id/putong_type"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/page_width_height"
+                            android:src="@drawable/shoukuaner_09" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/duanxin_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@drawable/bg_rect_corners" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/all_page_bg"
+                            android:gravity="center" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:background="@null"
+                            android:src="@drawable/duanxinsk" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="@dimen/page_width_height"
+                            android:gravity="center"
+                            android:text="短信充值"
+                            android:textColor="@color/black_text" />
+
+                        <ImageView
+                            android:id="@+id/duanxin_type"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/page_width_height"
+                            android:src="@drawable/shoukuaner_10" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/erweima_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@drawable/bg_rect_corners" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/all_page_bg"
+                            android:gravity="center" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:background="@null"
+                            android:src="@drawable/erweimask" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="@dimen/page_width_height"
+                            android:gravity="center|left"
+                            android:text="二维码充值"
+                            android:textColor="@color/black_text" />
+
+                        <ImageView
+                            android:id="@+id/erweima_type"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/page_width_height"
+                            android:src="@drawable/shoukuaner_10" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/margin_width_height"
+                    android:gravity="center_horizontal" >
+
+                    <Button
+                        android:id="@+id/nor_recv1_btn_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/btn_bg_blue2orange"
+                        android:enabled="true"
+                        android:text="下一步"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

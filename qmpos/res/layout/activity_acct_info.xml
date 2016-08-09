@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe2e2e2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/acct_info_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="账户详情" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/main_t4_sv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:background="#fff4f4f4" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hk_bg_list_selector"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/acct_info_1"
+                    android:layout_width="130dp"
+                    android:layout_height="50.0dip"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="姓名"
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/acct_info_text1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_toRightOf="@+id/acct_info_1"
+                    android:clickable="true"
+                    android:gravity="center|right"
+                    android:paddingRight="10.0dip"
+                    android:text=""
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hk_bg_list_selector"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/acct_info_2"
+                    android:layout_width="130dp"
+                    android:layout_height="50.0dip"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="手机号"
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/acct_info_text2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_toRightOf="@+id/acct_info_2"
+                    android:clickable="true"
+                    android:gravity="center|right"
+                    android:paddingRight="10.0dip"
+                    android:text=""
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hk_bg_list_selector"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/acct_info_3"
+                    android:layout_width="130dp"
+                    android:layout_height="50.0dip"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="系统编号"
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/acct_info_text3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_toRightOf="@+id/acct_info_3"
+                    android:clickable="true"
+                    android:gravity="center|right"
+                    android:paddingRight="10.0dip"
+                    android:text=""
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hk_bg_list_selector"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/acct_info_4"
+                    android:layout_width="130dp"
+                    android:layout_height="50.0dip"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="注册日期"
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/acct_info_text4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_toRightOf="@+id/acct_info_4"
+                    android:clickable="true"
+                    android:gravity="center|right"
+                    android:paddingRight="10.0dip"
+                    android:text=""
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hk_bg_list_selector"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/acct_info_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50.0dip"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="上次登录时间"
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/acct_info_text5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_toRightOf="@+id/acct_info_5"
+                    android:clickable="true"
+                    android:gravity="center|right"
+                    android:paddingRight="10.0dip"
+                    android:text=""
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hk_bg_list_selector"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/acct_info_6"
+                    android:layout_width="130dp"
+                    android:layout_height="50.0dip"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="身份证号"
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/acct_info_text6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_toRightOf="@+id/acct_info_6"
+                    android:clickable="true"
+                    android:gravity="center|right"
+                    android:paddingRight="10.0dip"
+                    android:text=""
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hk_bg_list_selector"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/acct_info_7"
+                    android:layout_width="130dp"
+                    android:layout_height="50.0dip"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="实名状态"
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/acct_info_text7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_toRightOf="@+id/acct_info_7"
+                    android:clickable="true"
+                    android:gravity="center|right"
+                    android:paddingRight="10.0dip"
+                    android:text=""
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hk_bg_list_selector"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/acct_info_9"
+                    android:layout_width="130dp"
+                    android:layout_height="50.0dip"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="提现手续费\n(5万以下)"
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/acct_info_text9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_toRightOf="@+id/acct_info_9"
+                    android:clickable="true"
+                    android:gravity="center|right"
+                    android:paddingRight="10.0dip"
+                    android:text=""
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hk_bg_list_selector"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/acct_info_10"
+                    android:layout_width="130dp"
+                    android:layout_height="50.0dip"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="提现手续费\n(5万以上)"
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/acct_info_text10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_toRightOf="@+id/acct_info_10"
+                    android:clickable="true"
+                    android:gravity="center|right"
+                    android:paddingRight="10.0dip"
+                    android:text=""
+                    android:textColor="#ff5b5b5b"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

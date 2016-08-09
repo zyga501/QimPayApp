@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:paddingTop="5dip" >
+
+    <TextView
+        android:id="@+id/list_item_trans_date"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="姓名"
+        android:textColor="#ff5b5b5b"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/list_item_mer_info"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/list_item_trans_date"
+        android:gravity="center|right"
+        android:paddingRight="10dp"
+        android:text="张三丰"
+        android:textColor="#ff5b5b5b"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/list_shiming_zhuangtai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_item_mer_info"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="df" />
+
+    <TextView
+        android:id="@+id/list_jiaoyi_zhuangtai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/list_item_mer_info"
+        android:layout_toRightOf="@+id/list_shiming_zhuangtai"
+        android:gravity="center|right"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:text="123"
+        android:textColor="#ffff0000" />
+
+</RelativeLayout>

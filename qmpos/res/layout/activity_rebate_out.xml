@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/rebate_out_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="返佣资金转出" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_phone_recharge_select"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5.0dip"
+        android:orientation="vertical"
+        android:padding="20.0dip"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/hk_bg_list_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="转出金额" />
+
+            <View
+                style="@style/textview_line_edit"
+                android:layout_height="18dp"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="13.0dip" />
+
+            <EditText
+                android:id="@+id/rebate_out_rebate_amt"
+                style="@style/et_input_textview"
+                android:layout_marginLeft="10.0dip"
+                android:numeric="decimal"
+                android:hint="请输入转出金额" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/hk_bg_list_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="交易密码" />
+
+            <View
+                style="@style/textview_line_edit"
+                android:layout_height="18dp"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="13.0dip" />
+
+            <EditText
+                android:id="@+id/rebate_out_trans_pwd"
+                style="@style/et_input_textview"
+                android:layout_marginLeft="10.0dip"
+                android:hint="请输入交易密码"
+                android:password="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rebate_out_amt_info"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="4.0dip"
+            android:text=""
+            android:textColor="#ffa0a0a2"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/rebate_out_btn_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/all_page_bg"
+                android:enabled="true"
+                android:text="确认转出"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="20.0dip"
+            android:text="须知"
+            android:textColor="#ff36363e" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="● 返佣资金为贵方推荐商户刷卡的返利"
+            android:textColor="#ffc0c0c0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="● 你可将你的返佣资金转入到现金账户"
+            android:textColor="#ffc0c0c0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="● 转出资金可提现或购买APP中的相关产品"
+            android:textColor="#ffc0c0c0" />
+    </LinearLayout>
+
+</LinearLayout>

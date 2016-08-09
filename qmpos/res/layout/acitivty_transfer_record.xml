@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="转账记录" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/zhuanru_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_zhuanru"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:text="转入"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/zhuanru_underline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/red" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/under_line" />
+
+        <RelativeLayout
+            android:id="@+id/zhuanchu_layout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_zhuanchu"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:text="转出"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/zhuanchu_underline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/under_line" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <cn.qmpos.view.XListView
+        android:id="@+id/turn_Into_out_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000" />
+
+</LinearLayout>

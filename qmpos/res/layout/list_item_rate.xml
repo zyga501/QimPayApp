@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/hk_bg_list_selector" >
+
+        <TextView
+            android:id="@+id/tv_pay_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/page_margin15"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/tv_t0_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/page_margin15"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size16" />
+    </RelativeLayout>
+
+</RelativeLayout>

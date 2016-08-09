@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/score_out_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="积分兑换" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_phone_recharge_select"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dip"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:background="@drawable/hk_bg_list_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/score_out_score_info"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="积分总额为：0分"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rebate_out_amt_info"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text="选择兑换类别"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/score_out_rg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip" >
+            </RadioGroup>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" 
+            />
+
+        <TextView
+            android:id="@+id/score_out_bus_info"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="4.0dip"
+            android:text=""
+            android:textColor="#ffa0a0a2"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/hk_bg_list_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="兑换数量" />
+
+            <View
+                style="@style/textview_line_edit"
+                android:layout_height="18dp"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="13.0dip" />
+
+            <EditText
+                android:id="@+id/score_out_bus_num"
+                style="@style/et_input_textview"
+                android:layout_marginLeft="10.0dip"
+                android:hint="请输入你需兑换的数量" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/hk_bg_list_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="交易密码" />
+
+            <View
+                style="@style/textview_line_edit"
+                android:layout_height="18dp"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="13.0dip" />
+
+            <EditText
+                android:id="@+id/score_out_trans_pwd"
+                style="@style/et_input_textview"
+                android:layout_marginLeft="10.0dip"
+                android:hint="请输入交易密码"
+                android:password="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/score_out_btn_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/all_page_bg"
+                android:enabled="true"
+                android:text="确认兑换"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="15.0dip"
+            android:text="须知"
+            android:textColor="#ff36363e" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="● 兑换即时生效"
+            android:textColor="#ffc0c0c0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="● 历史兑换交易可点击此处查看"
+            android:textColor="#ffc0c0c0" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/pay_list_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="收款记录" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/all_trading_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/all_trading_button"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:text="全部交易"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/all_trading_underline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/red" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/under_line" />
+
+        <RelativeLayout
+            android:id="@+id/successful_trading_layout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/successful_trading_button"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:text="成功交易"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/successful_trading_underline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/under_line" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <cn.qmpos.view.XListView
+        android:id="@+id/pay_list_data_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000" />
+
+</LinearLayout>

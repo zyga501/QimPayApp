@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/nameAuthLay"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/auth_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="绑定收款银行卡" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameAuthLay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_width_height"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/cardBank"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/bg_rect_corner"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="center"
+                    android:text="结算银行" />
+
+                <View
+                    style="@style/textview_line_edit"
+                    android:layout_marginBottom="2.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="2.0dip" />
+
+                <TextView
+                    android:id="@+id/auth_text_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="0.12"
+                    android:drawableRight="@drawable/select_right"
+                    android:gravity="center"
+                    android:text="选择结算银行"
+                    android:textColor="#ff000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardName"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_below="@+id/cardBank"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/bg_rect_corner"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="center"
+                    android:text="结算户主" />
+
+                <View
+                    style="@style/textview_line_edit"
+                    android:layout_marginBottom="2.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="2.0dip" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="ss"
+                    android:textColor="#ff808a87"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/auth_text_card_name"
+                    style="@style/et_input_textview"
+                    android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardNo"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_below="@+id/cardName"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/bg_rect_corner"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="center"
+                    android:text="结算卡号" />
+
+                <View
+                    style="@style/textview_line_edit"
+                    android:layout_marginBottom="2.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="2.0dip" />
+
+                <EditText
+                    android:id="@+id/auth_edit_card_no"
+                    style="@style/et_input_textview"
+                    android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/number_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_below="@+id/cardNo"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/bg_rect_corner"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="center"
+                    android:text="身份证号" />
+
+                <View
+                    style="@style/textview_line_edit"
+                    android:layout_marginBottom="2.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginTop="2.0dip" />
+
+                <EditText
+                    android:id="@+id/reg2_edit_cert_no"
+                    style="@style/et_input_textview"
+                    android:layout_marginLeft="10dp"
+                    android:hint="@string/reg2_cert_no" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_layout"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="请拍摄如下照片用于认证\n(上传图片占用较大流量，建议使用wifi)" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/picShow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tips"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip" >
+
+                <TableRow
+                    android:id="@+id/one"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="3.0dip"
+                    android:layout_weight="1.0" >
+
+                    <RelativeLayout
+                        android:id="@+id/auth_cardPositive"
+                        android:layout_width="0.0dip"
+                        android:layout_height="120.0dip"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/border2" >
+
+                        <TextView
+                            android:id="@+id/auth_cardPositiveView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10.0dip"
+                            android:drawablePadding="10.0dip"
+                            android:drawableTop="@drawable/add2"
+                            android:text="身份证+银行卡（正面）"
+                            android:textColor="#ffc0c0c0"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/auth_cardPositiveImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/auth_cardReverse"
+                        android:layout_width="0.0dip"
+                        android:layout_height="120.0dip"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/border2" >
+
+                        <TextView
+                            android:id="@+id/auth_cardReverseView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10.0dip"
+                            android:drawablePadding="10.0dip"
+                            android:drawableTop="@drawable/add2"
+                            android:text="身份证+银行卡（反面）"
+                            android:textColor="#ffc0c0c0"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/auth_cardReverseImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/auth_manCard"
+                        android:layout_width="0.0dip"
+                        android:layout_height="120.0dip"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/border2" >
+
+                        <TextView
+                            android:id="@+id/auth_manCardView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10.0dip"
+                            android:drawablePadding="10.0dip"
+                            android:drawableTop="@drawable/add2"
+                            android:text="手持身份证+银行卡（正面）"
+                            android:textColor="#ffc0c0c0"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/auth_manCardImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/two"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="3.0dip"
+                    android:layout_weight="1.0"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:id="@+id/auth_bankPositive"
+                        android:layout_width="0.0dip"
+                        android:layout_height="120.0dip"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/border2" >
+
+                        <TextView
+                            android:id="@+id/auth_bankPositiveView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="30.0dip"
+                            android:drawablePadding="10.0dip"
+                            android:drawableTop="@drawable/add2"
+                            android:text="银行卡正面照"
+                            android:textColor="#ffc0c0c0" />
+
+                        <ImageView
+                            android:id="@+id/auth_bankPositiveImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/auth_bankReverse"
+                        android:layout_width="0.0dip"
+                        android:layout_height="120.0dip"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/border2" >
+
+                        <TextView
+                            android:id="@+id/auth_bankReverseView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="30.0dip"
+                            android:drawablePadding="10.0dip"
+                            android:drawableTop="@drawable/add2"
+                            android:text="银行卡反面照"
+                            android:textColor="#ffc0c0c0" />
+
+                        <ImageView
+                            android:id="@+id/auth_bankReverseImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/auth_manBank"
+                        android:layout_width="0.0dip"
+                        android:layout_height="120.0dip"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/border2" >
+
+                        <TextView
+                            android:id="@+id/auth_manBankView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="30.0dip"
+                            android:drawablePadding="10.0dip"
+                            android:drawableTop="@drawable/add2"
+                            android:text="本人持银行卡"
+                            android:textColor="#ffc0c0c0" />
+
+                        <ImageView
+                            android:id="@+id/auth_manBankImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/photo_template"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/picShow"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10dip"
+                android:text="● 查看认证示例"
+                android:textColor="#ffc0c0c0" />
+
+            <TextView
+                android:id="@+id/shili_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/photo_template"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5dip"
+                android:text="1、必须上传身份证和银行卡的正、反面照片"
+                android:textColor="#ffc0c0c0" />
+
+            <TextView
+                android:id="@+id/shili_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shili_one"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5dip"
+                android:text="2、手持证件照片需拍到持有人五官"
+                android:textColor="#ffc0c0c0" />
+
+            <TextView
+                android:id="@+id/shili_there"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shili_two"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5dip"
+                android:text="3、不能配戴眼镜拍照，拍照时请勿遮住脸部"
+                android:textColor="#ffc0c0c0" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_below="@+id/shili_there"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/auth_btn_next"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/all_page_bg"
+                    android:enabled="true"
+                    android:text="提交实名"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

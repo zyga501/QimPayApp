@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whilte"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="收款" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_phone_recharge_select"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="25dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/hk_bg_list_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="收款金额" />
+
+            <View
+                style="@style/textview_line_edit"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="5.0dip" />
+
+            <EditText
+                android:id="@+id/edit_receivables_money"
+                style="@style/et_turnout_input_textview"
+                android:layout_marginLeft="10.0dip"
+                android:hint="请输入收款金额"
+                android:maxLength="10"
+                android:numeric="decimal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/hk_bg_list_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="收款说明" />
+
+            <View
+                style="@style/textview_line_edit"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="5.0dip" />
+
+            <EditText
+                android:id="@+id/edit_receivables_remark"
+                style="@style/et_turnout_input_textview"
+                android:layout_marginLeft="10.0dip"
+                android:hint="请输入收款说明" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_receivables_money_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@color/all_page_bg"
+            android:enabled="true"
+            android:text="确认收款"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

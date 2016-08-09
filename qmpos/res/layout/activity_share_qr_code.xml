@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe2e2e2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/share_qr_code_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="扫描分享二维码" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.5"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="300dip"
+            android:layout_height="300dip"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY" />
+        <!-- android:src="@drawable/share_qrcode" -->
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dip"
+            android:text="请让对方使用扫码工具扫一扫"
+            android:textColor="@color/text_black" />
+    </RelativeLayout>
+
+</LinearLayout>

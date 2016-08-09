@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/ranking_layout"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/whilte" >
+
+                <Button
+                    android:id="@+id/tv_ranking"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text="排行榜"
+                    android:textColor="@color/all_page_bg"
+                    android:textSize="@dimen/page_margin15" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="30dp"
+                android:background="@color/all_page_bg" />
+
+            <RelativeLayout
+                android:id="@+id/integral_layout"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="40dp"
+                android:background="@color/deep_bule" >
+
+                <Button
+                    android:id="@+id/tv_integral"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text="积分详情"
+                    android:textColor="@color/whilte"
+                    android:textSize="@dimen/page_margin15" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/title"
+        android:background="@color/black" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/page_margin15"
+            android:text="排名"
+            android:textColor="@color/whilte"
+            android:textSize="@dimen/text_size18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="姓名/电话"
+            android:textColor="@color/whilte"
+            android:textSize="@dimen/text_size18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/page_margin15"
+            android:text="当月积分"
+            android:textColor="@color/whilte"
+            android:textSize="@dimen/text_size18" />
+    </RelativeLayout>
+
+    <cn.qmpos.view.XListView
+        android:id="@+id/pay_list_data_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:cacheColorHint="#00000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/list_itme_layout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#DDDDDD" >
+
+            <TextView
+                android:id="@+id/tv_ranking_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_width_height"
+                android:text="sss"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size14" />
+
+            <cn.qmpos.view.RoundImageView
+                android:id="@+id/user_head"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90dp"
+                android:src="@drawable/touxiang" />
+
+            <LinearLayout
+                android:id="@+id/name_phone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/user_head"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_name_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="张三丰"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size14" />
+
+                <TextView
+                    android:id="@+id/tv_phone_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12312312"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size14" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_integral_value_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/page_margin15"
+                android:text="100"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size14" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#5A5A5A"
+            android:gravity="center"
+            android:text="每月前10名将获得神秘礼品，详情点击..."
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size14" />
+    </LinearLayout>
+
+</RelativeLayout>

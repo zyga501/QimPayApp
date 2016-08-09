@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe2e2e2"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/qr_recv1_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="二维码收款" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_width_height"
+                android:layout_marginRight="@dimen/margin_width_height"
+                android:layout_marginTop="@dimen/page_width_height"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@drawable/bg_rect_corner"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10.0dip"
+                        android:gravity="center"
+                        android:text="收款金额" />
+
+                    <View
+                        style="@style/textview_line_edit"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="2.0dip" />
+
+                    <EditText
+                        android:id="@+id/qr_recv1_trans_amt"
+                        style="@style/et_input_textview"
+                        android:layout_marginLeft="10.0dip"
+                        android:hint="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:text="收款说明"
+                        android:textColor="@color/gray"
+                        android:textSize="18.0sp" />
+
+                    <EditText
+                        android:id="@+id/qr_recv1_ord_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:ems="10"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="top|center_vertical"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/gray" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:text="收款方式"
+                        android:textColor="@color/gray"
+                        android:textSize="18.0sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/shoukuaner_10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/bg_rect_corners" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="@dimen/page_width_height"
+                            android:gravity="center"
+                            android:text="T+1" />
+
+                        <ImageView
+                            android:id="@+id/qr_recv1_liq_type_t1"
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/page_width_height"
+                            android:src="@drawable/shoukuaner_09" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/shoukuaner_09"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:background="@drawable/bg_rect_corners"
+                        android:orientation="horizontal"
+                        android:src="@drawable/shoukuaner_09" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/page_width_height"
+                            android:gravity="center"
+                            android:text="T+0" />
+
+                        <ImageView
+                            android:id="@+id/qr_recv1_liq_type_t0"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/page_width_height"
+                            android:src="@drawable/shoukuaner_10" />
+                    </RelativeLayout>
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <RadioButton
+                            android:id="@+id/nor_recv1_liq_type_t1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:checked="true"
+                            android:text="T1"
+                            android:textColor="@color/black"
+                            android:textSize="18.0sp" />
+
+                        <RadioButton
+                            android:id="@+id/nor_recv1_liq_type_t0"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="T0"
+                            android:textColor="@color/black"
+                            android:textSize="18.0sp" />
+
+                        <RadioButton
+                            android:id="@+id/qr_recv1_liq_type_tt"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="按笔"
+                            android:textColor="@color/black"
+                            android:textSize="18.0sp"
+                            android:visibility="gone" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:text="收款类型"
+                        android:textColor="@color/gray"
+                        android:textSize="18.0sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/xinyongka_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:background="@drawable/bg_rect_corners"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/page_width_height"
+                            android:gravity="center"
+                            android:text="信用卡" />
+
+                        <ImageView
+                            android:id="@+id/credit_type"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/page_width_height"
+                            android:src="@drawable/shoukuaner_09" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/chuxuka_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:visibility="gone"
+                        android:background="@drawable/bg_rect_corners" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="@dimen/page_width_height"
+                            android:gravity="center"
+                            android:text="储蓄卡" />
+
+                        <ImageView
+                            android:id="@+id/savings_card_type"
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/page_width_height"
+                            android:src="@drawable/shoukuaner_10" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/yufufei_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:visibility="gone"
+                        android:background="@drawable/bg_rect_corners" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="@dimen/page_width_height"
+                            android:gravity="center"
+                            android:text="预付费卡" />
+
+                        <ImageView
+                            android:id="@+id/prepaid_card_charge_type"
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/page_width_height"
+                            android:src="@drawable/shoukuaner_10" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/qr_recv1_fee_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:textColor="#ff989caa"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal" >
+
+                    <Button
+                        android:id="@+id/qr_recv1_btn_submit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/btn_bg_block2orange"
+                        android:enabled="true"
+                        android:text="发起收款"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

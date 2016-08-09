@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E8E8E8"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="余额" />
+
+        <Button
+            android:id="@+id/bt_rebate_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/page_margin15"
+            android:background="@null"
+            android:text="返佣记录"
+            android:textColor="@color/whilte"
+            android:textSize="@dimen/text_size16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/fanyongda" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/page_margin"
+            android:text="返佣"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/textRateAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size20" />
+        
+        <Button 
+            android:id="@+id/bt_rebate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/chongzhi"
+            android:text="返佣转出"
+            android:textColor="@color/whilte"
+            android:textSize="@dimen/text_size18"
+            android:layout_marginTop="@dimen/page_margin15"
+            android:layout_marginLeft="@dimen/margin_width_height"
+            android:layout_marginRight="@dimen/margin_width_height"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe2e2e2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/sms_recv2_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="短信收款" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_phone_recharge_select"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="20.0dip"
+        android:orientation="vertical"
+        android:padding="10.0dip"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/bg_rect_corner"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="手机号码" />
+
+            <View
+                style="@style/textview_line_edit"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="2.0dip" />
+
+            <TextView
+                android:id="@+id/sms_recv2_recv_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ff000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/bg_rect_corner"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="收款金额" />
+
+            <View
+                style="@style/textview_line_edit"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="2.0dip" />
+
+            <TextView
+                android:id="@+id/sms_recv2_trans_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ff000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/bg_rect_corner"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="收款原因" />
+
+            <View
+                style="@style/textview_line_edit"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="2.0dip" />
+
+            <TextView
+                android:id="@+id/sms_recv2_ord_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ff000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="20.0dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="短信内容"
+                android:textColor="@color/gray"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/sms_recv2_smsText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="4.36"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="textMultiLine"
+                android:text="" >
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/sms_recv2_btn_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/all_page_bg"
+                android:enabled="true"
+                android:text="发送短信"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

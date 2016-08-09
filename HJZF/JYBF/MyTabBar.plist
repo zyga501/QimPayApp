@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>item</key>
+	<array>
+		<dict>
+			<key>imagename</key>
+			<string>caifu@2x.png</string>
+			<key>imagename_select</key>
+			<string>caifu2@3x.png</string>
+		</dict>
+		<dict>
+			<key>imagename</key>
+			<string>shoukuandi@3x.png</string>
+			<key>imagename_select</key>
+			<string>shoukuandi2@2x.png</string>
+		</dict>
+		<dict>
+			<key>imagename</key>
+			<string>fenxiang@3x.png</string>
+			<key>imagename_select</key>
+			<string>fenxiang2@3x.png</string>
+		</dict>
+		<dict>
+			<key>imagename</key>
+			<string>wode@2x.png</string>
+			<key>imagename_select</key>
+			<string>wode1@2x.png</string>
+		</dict>
+	</array>
+	<key>bgimagename</key>
+	<string></string>
+</dict>
+</plist>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:background="#ffffffff"
+       android:paddingTop="5dip"
+       android:orientation="vertical" >
+    <TextView
+        android:id="@+id/list_item_trans_date"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:text="2014-12-23 12:12:11"
+        android:textColor="#ff5b5b5b"
+        android:textSize="15.0sp" />
+    <TextView
+        android:id="@+id/list_item_trans_amt"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:gravity="center|right"
+        android:paddingRight="10.0dip"
+        android:text="1234.43"
+        android:textColor="#ff5b5b5b"
+        android:textSize="15.0sp" 
+        android:layout_toRightOf="@+id/list_item_trans_date"/>
+    
+	<TextView
+	    android:id="@+id/list_item_mer_info"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+	    android:layout_below="@+id/list_item_trans_date"
+	    android:text="程锐(138****4321)" />
+	
+	
+    <TextView
+        android:id="@+id/list_item_rebate_amt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|right"
+        android:paddingRight="10.0dip"
+        android:text="返佣0.01"
+        android:textColor="#ffff0000"
+        android:layout_below="@+id/list_item_trans_date"
+        android:layout_toRightOf="@+id/list_item_mer_info"/>
+    
+   </RelativeLayout>

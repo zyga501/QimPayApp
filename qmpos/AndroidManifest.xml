@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.qmpos"
+    android:versionCode="1"
+    android:versionName="1.07" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <permission
+        android:name="cn.qmpos.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- 第三方微信分享权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- 极光推送权限 -->
+    <uses-permission android:name="cn.qmpos.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- GPS定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 扫描银行卡 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- NFC -->
+    <uses-permission android:name="android.permission.NFC" />
+    <!-- 扫一扫 二维码权限 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name="cn.qmpos.push.ExampleApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/login_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="cn.qmpos.GuideActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.qmpos.Reg1Activity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.qmpos.Reg2Activity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name="io.card.payment.DataEntryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="cn.qmpos.FindLoginPwd1Activity" />
+        <activity android:name="cn.qmpos.FindLoginPwd2Activity" />
+        <activity android:name="cn.qmpos.ModifyLoginPwdActivity" />
+        <activity android:name="cn.qmpos.FindTransPwd1Activity" />
+        <activity android:name="cn.qmpos.FindTransPwd2Activity" />
+        <activity android:name="cn.qmpos.ModifyTransPwdActivity" />
+        <activity android:name="cn.qmpos.MainActivity" />
+        <activity android:name="cn.qmpos.NorRecv1Activity" />
+        <activity android:name="cn.qmpos.SmsRecv1Activity" />
+        <activity android:name="cn.qmpos.SmsRecv2Activity" />
+        <activity android:name="cn.qmpos.QrRecv1Activity" />
+        <activity android:name="cn.qmpos.WebViewActivity" />
+        <activity android:name="cn.qmpos.Liq1Activity" />
+        <activity
+            android:name="cn.qmpos.AuthenticationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity android:name="cn.qmpos.GuideFirstActivity" />
+        <activity android:name="cn.qmpos.LiqInfoActivity" />
+        <activity android:name="cn.qmpos.LiqAcctActivity" />
+        <activity android:name="cn.qmpos.AcctInfoActivity" />
+        <activity android:name="cn.qmpos.PwdMngActivity" />
+        <activity android:name="cn.qmpos.PayListActivity" />
+        <activity android:name="cn.qmpos.ScoreDetailsAcitivty" />
+        <activity android:name="cn.qmpos.PayDescActivity" />
+        <activity android:name="cn.qmpos.LiqListActivity" />
+        <activity android:name="cn.qmpos.LiqDescActivity" />
+        <activity android:name="cn.qmpos.RebateOutActivity" />
+        <activity android:name="cn.qmpos.ScoreOutActivity" />
+        <activity android:name="cn.qmpos.ShareQrCodeActivity" />
+        <activity android:name="cn.qmpos.RebateListActivity" />
+        <activity android:name="cn.qmpos.MerListActivity" />
+        <activity android:name="cn.qmpos.TestActivity" />
+        <activity android:name="cn.qmpos.LoginActivity" />
+        <!-- 结算卡管理 -->
+        <activity android:name="cn.qmpos.CardManagerActivity" />
+        <!-- 添加银行卡 -->
+        <activity android:name="cn.qmpos.AddCardActivity" />
+        <!-- 更改手机号 -->
+        <activity android:name="cn.qmpos.UpdatePhoneActivity" />
+        <activity android:name="cn.qmpos.UpdatePhoneSuccessActivity" />
+        <!-- 余额 -->
+        <activity android:name="cn.qmpos.BalanceActivity" />
+        <!-- 返佣 -->
+        <activity android:name="cn.qmpos.RebateActivity" />
+        <!-- 转账 -->
+        <activity android:name="cn.qmpos.TurnOutMoney1Activity" />
+        <activity android:name="cn.qmpos.TurnOutMoney2Activity" />
+        <!-- 收款 -->
+        <activity android:name="cn.qmpos.ReceivablesActivity" />
+        <!-- 扫一扫 -->
+        <activity android:name="cn.qmpos.ScanningActivity" />
+        <activity android:name="cn.qmpos.ScanAfterPaymentActivity" />
+        <!-- 转账记录 -->
+        <activity android:name="cn.qmpos.TransferRecordAcitivty" />
+        <!-- 费率信息 -->
+        <activity android:name="cn.qmpos.RateInformationActivity" />
+        <!-- 活动详情 -->
+        <activity android:name="cn.qmpos.EventDetailsActivity" />
+        <activity android:name="cn.qmpos.WebViewMoreActivity" />
+        <!-- NFC -->
+        <activity android:name="cn.qmpos.NFC_Activity" />
+        <!-- 攒善付收款 -->
+        <activity android:name="cn.qmpos.ZanShanFuActivity" />
+
+        <!-- NFC相关activity配置 -->
+        <activity
+            android:name="com.wepayplugin.nfc.ui.PayStartActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.wepayplugin.nfc.ui.SwiperCardActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wepayplugin.nfc.ui.PayResultActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="cn.qmpos.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- For test only 测试状态通知栏，需要打开的Activity -->
+        <activity android:name="cn.qmpos.push.ShowContentActivity" >
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cn.qmpos" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="cn.qmpos" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="cn.qmpos.push.MyReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="cn.qmpos" />
+            </intent-filter>
+        </receiver>
+        <!-- </>值来自开发者平台取得的AppKey -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="7eb5749a6c50177dfbc48877" />
+    </application>
+
+</manifest>

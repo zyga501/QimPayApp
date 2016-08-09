@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/find_login_pwd2_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="找回密码 -- 输入新密码" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="20.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/bg_edit1"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/find_login_pwd2_edit_new_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@null"
+                android:hint="输入新的登录密码"
+                android:numeric="integer"
+                android:paddingLeft="5dp"
+                android:password="true"
+                android:textColor="#ff000000"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/bg_edit1"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/find_login_pwd2_edit_new_pwd_again"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@null"
+                android:hint="确认新的登录密码"
+                android:numeric="integer"
+                android:paddingLeft="5.0dip"
+                android:password="true"
+                android:text=""
+                android:textColor="#ff000000"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_margin="5.0dip"
+            android:gravity="center_vertical"
+            android:text="登录密码由6位的数字组成"
+            android:textColor="@color/gray"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/find_login_pwd2_btn_submit"
+                android:layout_width="244dp"
+                android:layout_height="fill_parent"
+                android:background="@color/all_page_bg"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

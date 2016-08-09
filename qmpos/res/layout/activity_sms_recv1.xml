@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F3F3F3"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/all_page_bg" >
+
+        <Button
+            android:id="@+id/sms_recv1_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            style="@style/textview_title"
+            android:text="短信收款" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_width_height"
+        android:layout_marginRight="@dimen/margin_width_height"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/bg_rect_corner" >
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="手机号码"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/textview_line_edit"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="2.0dip"
+                android:layout_toRightOf="@+id/tv_phone" />
+
+            <Button
+                android:id="@+id/get_mail_list"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tongxunlu" />
+
+            <EditText
+                android:id="@+id/sms_recv1_edit_recv_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/get_mail_list"
+                android:layout_toRightOf="@+id/tv_phone"
+                android:background="@null"
+                android:hint="请输入对方手机号码"
+                android:numeric="integer"
+                android:phoneNumber="true"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提醒："
+                android:textColor="@color/text_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="您正在短信收款，"
+                android:textColor="@color/text_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="为确保你的正常收款，"
+                android:textColor="@color/text_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="请准确填写对方手机号码！"
+                android:textColor="@color/text_black" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sms_recv1_btn_next"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_width_height"
+            android:layout_marginTop="40dip"
+            android:background="@color/all_page_bg"
+            android:enabled="true"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
